@@ -5,7 +5,7 @@ from firebase_admin import credentials, firestore
 
 
 # criando uma variavel para armazer o arquivo json para podermos fazer a autenticaçao com o banco de dados
-cred = credentials.Certificate(r'D:\projetocursodbpython\sistemacadastroderemedios-firebase-adminsdk-fbsvc-92f4744f05.json')
+cred = credentials.Certificate(r'D:\projetocursodbpython\Sistema_de_Cadastro_de_remedios\sistemacadastroderemedios-firebase-adminsdk-fbsvc-943a6773d2.json')
 
 # agora iremos fazer a conexão do nosso sistema de gerenciamento de remedio com o banco de dados 
 firebase_admin.initialize_app(cred)
@@ -51,6 +51,6 @@ for dado in ver_remedios:
     print("Remedios cadastrados no sistema:",dado.to_dict())
 
 # Deletando dados usando o crud novamente D - delete atraves do id do Remédio
-doc_id = ""
-db_sistema_de_gerenciamento_de_remedios.collection("Gerenciador de Remedios").document(doc_id).delete()
-print("Remedio deletado com sucesso!")
+#doc_id = ""
+#db_sistema_de_gerenciamento_de_remedios.collection("Gerenciador de Remedios").document(doc_id).delete()
+#print("Remedio deletado com sucesso!")
